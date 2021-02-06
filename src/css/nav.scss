@@ -1,0 +1,44 @@
+@mixin layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav{
+    background-color: salmon;
+}
+.nav-container {
+  @include layout;
+  padding: 0 30px;
+  max-width: 1300px;
+  height: 70px;
+  margin: 0 auto;
+
+  .logo{
+      font-size: 25px;
+  }
+
+  .nav-links {
+    @include layout;
+    width: 400px;
+    li {
+      list-style: none;
+      font-size: 20px;
+      a {
+        text-decoration: none;
+        color: white;
+
+      }
+    }
+  }
+}
+
+.j{
+   background-color: red;
+    height: 200px;
+    width: 200px;
+    
+}
+.rise{
+    background-color: black;
+   
+}
